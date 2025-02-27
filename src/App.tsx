@@ -110,7 +110,7 @@ function App() {
         bal: balance,
         pin: initPin,
         lastUp: 1,
-        tra: [],
+        tra: ["1"],
         id: '1',
       };
       
@@ -188,11 +188,11 @@ function App() {
     
     // Create new transaction
     const newTransaction: Transaction = {
-      id: `tx-${Date.now()}`,
+      id: `ts1`,
       sender: nfcTag.id,
       recipient: recipient,
       amount: amount,
-      timestamp: Date.now(),
+      timestamp: 12,
       status: isOnline ? 'confirmed' : 'pending',
       hash: txHash,
     };
