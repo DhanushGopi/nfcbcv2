@@ -107,11 +107,11 @@ function App() {
     try {
       // Create new tag data
       const newTagData: NFCData = {
-        balance: balance,
+        bal: balance,
         pin: initPin,
-        lastUpdated: Date.now(),
-        transactions: [],
-        id: `nfc-tag-${Date.now()}`
+        lastUp: 1,
+        tra: [],
+        id: '1',
       };
       
       // Write to NFC tag
