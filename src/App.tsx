@@ -60,10 +60,11 @@ function App() {
   const scanNFC = async () => {
     if (!nfcSupported) {
       showNotification('NFC is not supported in this browser', 'error');
-      return;
+      setIsNfcScanning(true);
+      return;    
     }
     
-    setIsNfcScanning(true);
+    // setIsNfcScanning(true);
     
     try {
       const tagData = await readNFCTag();
